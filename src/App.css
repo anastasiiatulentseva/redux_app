@@ -15,7 +15,27 @@
 }
 
 .App-intro {
+  margin-top: 20px;
   font-size: large;
+}
+
+.list-unstyled {
+  list-style-type: none;
+  text-align: left;
+}
+
+.list-box {
+  border: 1px solid #dddddd;
+  width: 500px;
+  height: 300px;
+  overflow-y: auto;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list-item-checkbox {
+  margin-right: 10px;
 }
 
 @keyframes App-logo-spin {
