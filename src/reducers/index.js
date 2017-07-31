@@ -1,8 +1,8 @@
-import dropdown from './dropdown';
-import { combinReducers } from 'redux';
+import checked from './dropdown';
+import { combineReducers } from 'redux';
 
-const rootReducer = combinReducers({
-  dropdown
+const rootReducer = combineReducers({
+  checked
 });
 
 export default rootReducer;

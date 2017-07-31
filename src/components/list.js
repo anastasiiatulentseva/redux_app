@@ -5,6 +5,7 @@ class List extends Component {
 
   constructor(props) {
     super(props);
+    this.onCheckItem = this.onCheckItem.bind(this);
 
     let items = new Array(2000).fill().map((v,i)=>i + 1);
     this.state = {
@@ -12,24 +13,22 @@ class List extends Component {
     }
   }
 
+  onCheckItem(item) {
+    this.props.checkItem(item)
+  }
 
   render() {
     const listItems = this.state.listItems.map((item, idx) => {
       return <li key={idx}>
         <label>
-          <input type="checkbox" className="list-item-checkbox"/>
+          <input type="checkbox" className="list-item-checkbox" onChange={()=>this.onCheckItem(item)}/>
           ========= {item} =========
         </label>
       </li>
     });
     return (
-      <div className="App">
-        <div className="App-header">
-          <h2>Welcome to React and Redux</h2>
-        </div>
-        <div className="App-intro">
-          Select items
-        </div>
+      <div className="list-container">
+        <h2>Select items</h2>
         <div className="list-box">
           <ul className="list-unstyled">
             {listItems}

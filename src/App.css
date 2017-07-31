@@ -38,6 +38,24 @@
   margin-right: 10px;
 }
 
+.checked-items {
+  display: inline;
+  margin-left: 50px;
+  margin-right: 50px;
+  list-style-type: none;
+}
+.checked-box {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.checked-item {
+  float: left;
+  margin-right: 10px;
+}
+.list-container {
+  display: block;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
