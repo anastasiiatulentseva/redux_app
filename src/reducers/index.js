@@ -1,8 +1,9 @@
-import checked from './dropdown';
+import checkedItems from './checkedList';
+
 import { combineReducers } from 'redux';
 
 const rootReducer = combineReducers({
-  checked
+  checkedItems
 });
 
 export default rootReducer;
